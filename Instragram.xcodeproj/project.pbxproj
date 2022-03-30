@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		27AA2DEA27F4342C0030BD6D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA2DE927F4342C0030BD6D /* TabBarView.swift */; };
 		27B1E98C27F060F200B49ACE /* InstragramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B1E98B27F060F200B49ACE /* InstragramApp.swift */; };
 		27B1E98E27F060F200B49ACE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B1E98D27F060F200B49ACE /* ContentView.swift */; };
 		27B1E99027F060F400B49ACE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B1E98F27F060F400B49ACE /* Assets.xcassets */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		27AA2DE927F4342C0030BD6D /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		27B1E98827F060F200B49ACE /* Instragram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instragram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B1E98B27F060F200B49ACE /* InstragramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstragramApp.swift; sourceTree = "<group>"; };
 		27B1E98D27F060F200B49ACE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,6 +40,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		27AA2DE827F434220030BD6D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				27B1E98B27F060F200B49ACE /* InstragramApp.swift */,
+				27B1E98D27F060F200B49ACE /* ContentView.swift */,
+				27DF3FA927F322DC007A65B4 /* ProfileView.swift */,
+				27AA2DE927F4342C0030BD6D /* TabBarView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		27B1E97F27F060F200B49ACE = {
 			isa = PBXGroup;
 			children = (
@@ -58,9 +71,7 @@
 			isa = PBXGroup;
 			children = (
 				27B1E99B27F069F900B49ACE /* Fonts */,
-				27B1E98B27F060F200B49ACE /* InstragramApp.swift */,
-				27B1E98D27F060F200B49ACE /* ContentView.swift */,
-				27DF3FA927F322DC007A65B4 /* ProfileView.swift */,
+				27AA2DE827F434220030BD6D /* Views */,
 				27B1E98F27F060F400B49ACE /* Assets.xcassets */,
 				27B1E99127F060F400B49ACE /* Preview Content */,
 			);
@@ -158,6 +169,7 @@
 			files = (
 				27B1E98E27F060F200B49ACE /* ContentView.swift in Sources */,
 				27DF3FAA27F322DC007A65B4 /* ProfileView.swift in Sources */,
+				27AA2DEA27F4342C0030BD6D /* TabBarView.swift in Sources */,
 				27B1E98C27F060F200B49ACE /* InstragramApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
