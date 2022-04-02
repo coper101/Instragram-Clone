@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         // ProfileView(title: "netflix", imageName: "netflixLogo")
-        TabBarView()
+        HomeView()
     }
 }
 

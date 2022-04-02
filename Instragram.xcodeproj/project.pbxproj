@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2750140B27F83EBA00702DFE /* ProfileWithTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750140A27F83EBA00702DFE /* ProfileWithTitleView.swift */; };
+		2750140D27F85FAD00702DFE /* StoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750140C27F85FAD00702DFE /* StoriesListView.swift */; };
 		27AA2DEA27F4342C0030BD6D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA2DE927F4342C0030BD6D /* TabBarView.swift */; };
 		27B1E98C27F060F200B49ACE /* InstragramApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B1E98B27F060F200B49ACE /* InstragramApp.swift */; };
 		27B1E98E27F060F200B49ACE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B1E98D27F060F200B49ACE /* ContentView.swift */; };
@@ -14,10 +16,15 @@
 		27B1E99327F060F400B49ACE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B1E99227F060F400B49ACE /* Preview Assets.xcassets */; };
 		27B1E99E27F06A1A00B49ACE /* Helvetica-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27B1E99C27F06A1A00B49ACE /* Helvetica-Bold.ttf */; };
 		27B1E99F27F06A1A00B49ACE /* Helvetica.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27B1E99D27F06A1A00B49ACE /* Helvetica.ttf */; };
+		27CF328927F717FF0005C2D0 /* DividerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF328827F717FF0005C2D0 /* DividerView.swift */; };
+		27CF328B27F7197C0005C2D0 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF328A27F7197C0005C2D0 /* HomeView.swift */; };
+		27CF328D27F71AF40005C2D0 /* TopBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27CF328C27F71AF40005C2D0 /* TopBarView.swift */; };
 		27DF3FAA27F322DC007A65B4 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27DF3FA927F322DC007A65B4 /* ProfileView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2750140A27F83EBA00702DFE /* ProfileWithTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWithTitleView.swift; sourceTree = "<group>"; };
+		2750140C27F85FAD00702DFE /* StoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesListView.swift; sourceTree = "<group>"; };
 		27AA2DE927F4342C0030BD6D /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		27B1E98827F060F200B49ACE /* Instragram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instragram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B1E98B27F060F200B49ACE /* InstragramApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstragramApp.swift; sourceTree = "<group>"; };
@@ -26,6 +33,9 @@
 		27B1E99227F060F400B49ACE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		27B1E99C27F06A1A00B49ACE /* Helvetica-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Helvetica-Bold.ttf"; sourceTree = "<group>"; };
 		27B1E99D27F06A1A00B49ACE /* Helvetica.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Helvetica.ttf; sourceTree = "<group>"; };
+		27CF328827F717FF0005C2D0 /* DividerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DividerView.swift; sourceTree = "<group>"; };
+		27CF328A27F7197C0005C2D0 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		27CF328C27F71AF40005C2D0 /* TopBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarView.swift; sourceTree = "<group>"; };
 		27DF3FA927F322DC007A65B4 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -40,13 +50,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2710D5D327F8304C00293A63 /* Home Screen */ = {
+			isa = PBXGroup;
+			children = (
+				27CF328A27F7197C0005C2D0 /* HomeView.swift */,
+				2750140C27F85FAD00702DFE /* StoriesListView.swift */,
+			);
+			path = "Home Screen";
+			sourceTree = "<group>";
+		};
+		2750140827F834D400702DFE /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				27DF3FA927F322DC007A65B4 /* ProfileView.swift */,
+				27AA2DE927F4342C0030BD6D /* TabBarView.swift */,
+				27CF328827F717FF0005C2D0 /* DividerView.swift */,
+				27CF328C27F71AF40005C2D0 /* TopBarView.swift */,
+				2750140A27F83EBA00702DFE /* ProfileWithTitleView.swift */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
 		27AA2DE827F434220030BD6D /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				27B1E98B27F060F200B49ACE /* InstragramApp.swift */,
 				27B1E98D27F060F200B49ACE /* ContentView.swift */,
-				27DF3FA927F322DC007A65B4 /* ProfileView.swift */,
-				27AA2DE927F4342C0030BD6D /* TabBarView.swift */,
+				2750140827F834D400702DFE /* Reusables */,
+				2710D5D327F8304C00293A63 /* Home Screen */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,7 +201,12 @@
 				27B1E98E27F060F200B49ACE /* ContentView.swift in Sources */,
 				27DF3FAA27F322DC007A65B4 /* ProfileView.swift in Sources */,
 				27AA2DEA27F4342C0030BD6D /* TabBarView.swift in Sources */,
+				27CF328B27F7197C0005C2D0 /* HomeView.swift in Sources */,
+				27CF328D27F71AF40005C2D0 /* TopBarView.swift in Sources */,
 				27B1E98C27F060F200B49ACE /* InstragramApp.swift in Sources */,
+				27CF328927F717FF0005C2D0 /* DividerView.swift in Sources */,
+				2750140B27F83EBA00702DFE /* ProfileWithTitleView.swift in Sources */,
+				2750140D27F85FAD00702DFE /* StoriesListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
