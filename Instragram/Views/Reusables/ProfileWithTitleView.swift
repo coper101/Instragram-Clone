@@ -88,6 +88,7 @@ struct ProfileWithTitleView: View {
     var isNewStory = true
     var title = "Your Story"
     var action: () -> Void
+    var imageName: String? = nil
     
     // MARK: - Body
     var body: some View {
@@ -98,14 +99,18 @@ struct ProfileWithTitleView: View {
                 NewStoryView(action: action)
                     .padding(.top, 5)
             } else {
-                ProfileView(hasStory: true, action: action)
+                ProfileView(
+                    imageName: imageName,
+                    hasStory: true,
+                    action: action
+                )
             }
             
             Spacer()
             
             // Row 2: Title
             Text(title)
-                .font(Font.system(size: 14))
+                .font(.custom("Helvetica", size: 14))
                 .kerning(0.4)
                 .lineLimit(1)
                 .foregroundColor(.black)

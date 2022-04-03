@@ -9,9 +9,9 @@ import SwiftUI
 
 struct User: Identifiable {
     var id = UUID().uuidString
-    var username: String
-    var userImageName: String?
-    var hasStory: Bool
+    var username: String = "stetch"
+    var userImageName: String? = "stetch"
+    var hasStory: Bool = true
 }
 
 struct StoriesListView: View {
@@ -19,40 +19,15 @@ struct StoriesListView: View {
     var hasDivider = true
     var currentUser = User(
         username: "username",
-        userImageName: nil,
         hasStory: false
     )
     var followedUsers = [
-        User(
-            username: "username",
-            userImageName: nil,
-            hasStory: true
-        ),
-        User(
-            username: "username",
-            userImageName: nil,
-            hasStory: true
-        ),
-        User(
-            username: "username",
-            userImageName: nil,
-            hasStory: true
-        ),
-        User(
-            username: "username",
-            userImageName: nil,
-            hasStory: true
-        ),
-        User(
-            username: "username",
-            userImageName: nil,
-            hasStory: true
-        ),
-        User(
-            username: "username",
-            userImageName: nil,
-            hasStory: true
-        )
+        User(),
+        User(),
+        User(),
+        User(),
+        User(),
+        User()
     ]
 
     
@@ -75,7 +50,8 @@ struct StoriesListView: View {
                         ProfileWithTitleView(
                             isNewStory: false,
                             title: user.username,
-                            action: {}
+                            action: {},
+                            imageName: user.userImageName
                         )
                     }
                     

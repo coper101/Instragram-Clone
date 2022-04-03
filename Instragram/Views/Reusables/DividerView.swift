@@ -9,11 +9,12 @@ import SwiftUI
 
 struct DividerView: View {
     // MARK: - Properties
+    var opacity = 1.0
     
     // MARK: - Body
     var body: some View {
         Rectangle()
-            .fill(Color("Surface"))
+            .fill(Color("Surface").opacity(opacity))
             .frame(height: 0.5)
             .frame(maxWidth: .infinity)
     }

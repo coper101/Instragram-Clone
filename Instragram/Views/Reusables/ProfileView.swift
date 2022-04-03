@@ -19,6 +19,24 @@ enum ProfileSize {
             return (65, 64)
         }
     }
+    
+    var lineWidth: CGFloat {
+        switch self {
+        case .small:
+            return 1.5
+        case .big:
+            return 3.2
+        }
+    }
+    
+    var space: CGFloat {
+        switch self {
+        case .small:
+            return 4
+        case .big:
+            return 6
+        }
+    }
 }
 
 struct ProfileView: View {
@@ -27,6 +45,7 @@ struct ProfileView: View {
     var hasStory = false
     var size = ProfileSize.big
     var action: () -> Void
+    
     
     // MARK: - Body
     var body: some View {
@@ -43,9 +62,9 @@ struct ProfileView: View {
             .clipShape(Circle())
             .overlay(
                 Circle()
-                    .stroke(Color("Surface"), lineWidth: 0.6)
+                    .strokeBorder(Color("Surface2"), lineWidth: 0.6)
             )
-            .padding(.all, 5)
+            .padding(.all, size.space)
             .overlay(
                 Circle()
                     // inner border
@@ -57,7 +76,7 @@ struct ProfileView: View {
                             ],
                             startPoint: .bottomLeading,
                             endPoint: .topTrailing),
-                        lineWidth: hasStory ? 3.2 : 0
+                        lineWidth: hasStory ? size.lineWidth : 0
                     )
             )
         }

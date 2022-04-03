@@ -63,7 +63,7 @@ struct IconButtonView: View {
 struct TopBarView: View {
     // MARK: - Properties
     var topBarType: TopBarType
-    var hasDivider = true
+    var dividerOpacity = 1.0
     
     // MARK: - Body
     var body: some View {
@@ -136,9 +136,7 @@ struct TopBarView: View {
             .padding(.trailing, 15)
             
             // MARK: - Row 2: Divider
-            if hasDivider {
-                DividerView()
-            }
+            DividerView(opacity: dividerOpacity)
             
         } //: VStack
     }

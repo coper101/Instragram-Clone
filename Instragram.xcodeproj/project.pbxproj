@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2747CCAE27F9A9E200D6C315 /* PostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2747CCAD27F9A9E200D6C315 /* PostView.swift */; };
 		2750140B27F83EBA00702DFE /* ProfileWithTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750140A27F83EBA00702DFE /* ProfileWithTitleView.swift */; };
 		2750140D27F85FAD00702DFE /* StoriesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2750140C27F85FAD00702DFE /* StoriesListView.swift */; };
 		27AA2DEA27F4342C0030BD6D /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27AA2DE927F4342C0030BD6D /* TabBarView.swift */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2747CCAD27F9A9E200D6C315 /* PostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostView.swift; sourceTree = "<group>"; };
 		2750140A27F83EBA00702DFE /* ProfileWithTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileWithTitleView.swift; sourceTree = "<group>"; };
 		2750140C27F85FAD00702DFE /* StoriesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesListView.swift; sourceTree = "<group>"; };
 		27AA2DE927F4342C0030BD6D /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
@@ -55,6 +57,7 @@
 			children = (
 				27CF328A27F7197C0005C2D0 /* HomeView.swift */,
 				2750140C27F85FAD00702DFE /* StoriesListView.swift */,
+				2747CCAD27F9A9E200D6C315 /* PostView.swift */,
 			);
 			path = "Home Screen";
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 				27B1E98C27F060F200B49ACE /* InstragramApp.swift in Sources */,
 				27CF328927F717FF0005C2D0 /* DividerView.swift in Sources */,
 				2750140B27F83EBA00702DFE /* ProfileWithTitleView.swift in Sources */,
+				2747CCAE27F9A9E200D6C315 /* PostView.swift in Sources */,
 				2750140D27F85FAD00702DFE /* StoriesListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
