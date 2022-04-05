@@ -33,7 +33,7 @@ struct PostView: View {
                     TextButtonView(
                         title: "username",
                         action: {},
-                        font: .helveticaBold
+                        textStyle: .title
                     )
                     Spacer()
                                         
@@ -113,13 +113,13 @@ struct PostView: View {
                     TextButtonView(
                         title: "username",
                         action: {},
-                        font: .helveticaBold
+                        textStyle: .title
                     )
                     Text("and")
                     TextButtonView(
                         title: "10,000 others",
                         action: {},
-                        font: .helveticaBold
+                        textStyle: .title
                     )
                     Spacer()
                 }
@@ -131,14 +131,17 @@ struct PostView: View {
                     TextButtonView(
                         title: "username",
                         action: {},
-                        font: .helveticaBold
+                        textStyle: .title
                     )
                     Text("caption...")
                     // Col 2: More Button
-                    Button(action: {}) {
-                        Text("more")
-                            .textStyle(colorOpacity: 0.5)
-                    }
+                    TextButtonView(
+                        title: "more",
+                        action: {},
+                        textStyle: .title,
+                        font: .helvetica,
+                        colorOpacity: 0.5
+                    )
                     Spacer()
                 }
                 .padding(.horizontal, 16)
@@ -148,6 +151,9 @@ struct PostView: View {
                     // Col 1: View All Comments Button
                     TextButtonView(
                         title: "View all 100 comments",
+                        action: {},
+                        textStyle: .title,
+                        font: .helvetica,
                         colorOpacity: 0.5
                     )
                     // Col 2: Time Posted

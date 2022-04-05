@@ -11,17 +11,19 @@ struct TextButtonView: View {
     // MARK: - Properties
     var title: String
     var action: () -> Void = {}
-    var size: CGFloat = 16
-    var font: Fonts = .helvetica
-    var letterSpacing: CGFloat = -0.15
-    var color: Color = Colors.primary.value
-    var colorOpacity: Double = 1
+    var textStyle: TextStyle = .subtitle
+    var size: CGFloat? = nil
+    var font: Fonts? = nil
+    var letterSpacing: CGFloat? = nil
+    var color: Color? = nil
+    var colorOpacity: Double? = nil
     
     // MARK: - Body
     var body: some View {
         Button(action: action) {
             Text(title)
                 .textStyle(
+                    textStyle,
                     size: size,
                     font: font,
                     letterSpacing: letterSpacing,
@@ -35,6 +37,8 @@ struct TextButtonView: View {
 // MARK: - Preview
 struct TextButtonView_Previews: PreviewProvider {
     static var previews: some View {
-        TextButtonView(title: "Title")
+        TextButtonView(title: "Title", textStyle: .title)
+            .previewLayout(.sizeThatFits)
+            .padding()
     }
 }

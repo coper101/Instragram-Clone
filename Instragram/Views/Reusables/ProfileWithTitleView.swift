@@ -109,7 +109,7 @@ struct ProfileWithTitleView: View {
             
             // Row 2: Title
             Text(title)
-                .textStyle(size: 13, letterSpacing: 0.4)
+                .textStyle(.subtitle)
                 .fillMaxWidth()
                 .padding(.bottom, 5)
             
