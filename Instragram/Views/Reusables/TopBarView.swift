@@ -130,7 +130,7 @@ struct TopBarView: View {
                     // Col 3: More
                 }
             }
-            .frame(maxWidth: .infinity)
+            .fillMaxWidth()
             .frame(height: topBarType == .home ? 47 : 50)
             .padding(.leading, 19)
             .padding(.trailing, 15)

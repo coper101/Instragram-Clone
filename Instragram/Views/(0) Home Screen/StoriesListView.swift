@@ -7,13 +7,6 @@
 
 import SwiftUI
 
-struct User: Identifiable {
-    var id = UUID().uuidString
-    var username: String = "stetch"
-    var userImageName: String? = "stetch"
-    var hasStory: Bool = true
-}
-
 struct StoriesListView: View {
     // MARK: - Properties
     var hasDivider = true
@@ -58,7 +51,7 @@ struct StoriesListView: View {
                 } //: HStack
                 
             } //: ScrollView
-            .frame(maxWidth: .infinity)
+            .fillMaxWidth()
             .frame(height: 113) // set a default height
             
             // Row 2: Divider

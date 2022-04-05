@@ -7,26 +7,12 @@
 
 import SwiftUI
 
-enum TabItem {
-    case home
-    case search
-    case reels
-    case shop
-    case profile
-    var id: Int {
-        switch self {
-        case .home:
-            return 1
-        case .search:
-            return 2
-        case .reels:
-            return 3
-        case .shop:
-            return 4
-        case .profile:
-            return 5
-        }
-    }
+enum TabItem: Int {
+    case home = 1
+    case search = 2
+    case reels = 3
+    case shop = 4
+    case profile = 5
 }
 
 struct TabButtonItem: Identifiable {
@@ -34,7 +20,7 @@ struct TabButtonItem: Identifiable {
     var iconNameActive: String? = nil
     var tabItem: TabItem
     var id: String {
-        "\(tabItem.id)"
+        "\(tabItem.rawValue)"
     }
 }
 
@@ -74,7 +60,7 @@ struct TabButtonView: View {
             }
         }
         .buttonStyle(MyButtonStyle(isPressed: $isPressed))
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .fillMaxSize()
     }
     
     // MARK: - Functions
@@ -129,7 +115,7 @@ struct TabBarView: View {
                 }
             } //: HStack
             .frame(height: 49)
-            .frame(maxWidth: .infinity)
+            .fillMaxWidth()
             
         } //: VStack
     }

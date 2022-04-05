@@ -16,7 +16,7 @@ struct DividerView: View {
         Rectangle()
             .fill(Color("Surface").opacity(opacity))
             .frame(height: 0.5)
-            .frame(maxWidth: .infinity)
+            .fillMaxWidth()
     }
 }
 

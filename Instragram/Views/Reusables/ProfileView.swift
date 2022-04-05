@@ -8,11 +8,14 @@
 import SwiftUI
 
 enum ProfileSize {
+    case tiny
     case small
     case big
     
     var value: (width: CGFloat, height: CGFloat) {
         switch self {
+        case .tiny:
+            return (16.5, 16.5)
         case .small:
             return (30.8, 30.33)
         case .big:
@@ -22,15 +25,19 @@ enum ProfileSize {
     
     var lineWidth: CGFloat {
         switch self {
+        case .tiny:
+            return 0
         case .small:
             return 1.5
         case .big:
-            return 3.2
+            return 2.8
         }
     }
     
     var space: CGFloat {
         switch self {
+        case .tiny:
+            return 0
         case .small:
             return 4
         case .big:

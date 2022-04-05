@@ -25,7 +25,7 @@ struct NewStoryView: View {
                         style: FillStyle(eoFill: true, antialiased: true)
                     )
                     .clipShape(Circle())
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .fillMaxSize()
                 
                 // Layer 2:
                 ZStack {
@@ -105,20 +105,16 @@ struct ProfileWithTitleView: View {
                     action: action
                 )
             }
-            
             Spacer()
             
             // Row 2: Title
             Text(title)
-                .font(.custom("Helvetica", size: 14))
-                .kerning(0.4)
-                .lineLimit(1)
-                .foregroundColor(.black)
-                .frame(width: 87)
+                .textStyle(size: 13, letterSpacing: 0.4)
+                .fillMaxWidth()
                 .padding(.bottom, 5)
             
         } //: VStack
-        .frame(height: 105)
+        .frame(width: 87, height: 105)
     }
 }
 
